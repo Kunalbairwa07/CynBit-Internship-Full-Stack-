@@ -7,5 +7,3 @@
 - Used JS to show user input dynamically on button click.
 - Practiced `getElementById()` and `addEventListener()` for clean event handling.
 
-## 💻 Commit Message
-`Day 3 - JS & DOM Practice`
