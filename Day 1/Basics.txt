@@ -98,4 +98,4 @@ Goal: Set up development environment and understand the basics of the MERN stack
 - Download from: https://www.postman.com/downloads
 
 -----------------------------------------------------
-✅ Your Day 1 Setup is Complete!
+✅ Day 1 Setup is Complete!
