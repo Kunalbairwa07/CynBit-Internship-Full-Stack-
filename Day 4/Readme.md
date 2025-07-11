@@ -12,5 +12,4 @@
 - Writing clean and understandable code
 - Exploring and learning outside the task list
 
-## 📌 Commit Message:
-`Day 4 - Cleaned code & completed pending tasks`
+
