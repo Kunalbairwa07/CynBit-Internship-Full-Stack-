@@ -13,9 +13,7 @@ Complete all pending tasks, clean the code, and explore something new on your ow
 - Made GitHub repo clean and presentable
 - Organized folder structure properly
 
-3️⃣ Self-Exploration:
-- Watched a helpful video on [topic you choose]
-- Read a blog on [topic] and learned new things
+3️⃣ Self-Exploration
 
 ✅ Summary:
 - Acted like a real dev: searched, solved, explored
