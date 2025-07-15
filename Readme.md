@@ -42,14 +42,3 @@ Each folder or markdown file contains what I worked on that day – from bug fix
 
 ---
 
-## 📌 Days Overview & Live Links
-
-| Day | Project Name         | Live Preview                                                                 |
-|-----|-----------------------|------------------------------------------------------------------------------|
-| 1   | Developer Intro Page  | [Day 1](https://kunalbairwa07.github.io/cynbit-tech-internship/Day 1/)        |
-| 2   | About Me Page         | [Day 2](https://kunalbairwa07.github.io/cynbit-tech-internship/Day 2/)        |
-| 3   | DOM Practice Page     | [Day 3](https://kunalbairwa07.github.io/cynbit-tech-internship/Day3/)        |
-| 4   | Problem Solver Pitch  | [Day 4](https://kunalbairwa07.github.io/cynbit-tech-internship/Day-4/)        |
-| 5   | Profile Card Project  | [Day 5](https://kunalbairwa07.github.io/cynbit-tech-internship/Day_5/)        |
-| 6   | Stylish Dev Card      | [Day 6](https://kunalbairwa07.github.io/cynbit-tech-internship/Day6/)        |
-| 7   | Mini User Directory   | [Day 7](https://kunalbairwa07.github.io/cynbit-tech-internship/Day 7/)        |
