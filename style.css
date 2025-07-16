@@ -45,6 +45,31 @@ p {
   transform: translateY(-2px); /* subtle hover lift */
 }
 
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 15px;
+  border-radius: 100px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-links a:hover {
+  background-color: #444444;
+  transform: translateY(-2px); /* subtle hover lift */
+}
+
 footer {
   margin-top: 40px;
   font-size: 0.9rem;
