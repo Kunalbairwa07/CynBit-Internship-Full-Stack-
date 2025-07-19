@@ -122,7 +122,7 @@ form.addEventListener("submit", (e) => {
   background: "#1c1c1c",
   color: "#ffd700",
 }).then(() => {
-  window.location.href = "dashboard.html";
+  window.location.href = "index_1.html";
 });
 });
 
