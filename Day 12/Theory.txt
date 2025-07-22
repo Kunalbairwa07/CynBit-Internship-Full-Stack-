@@ -1,0 +1,141 @@
+----------------------------------------
+🎓 STUDENT MANAGEMENT SYSTEM - Theory
+----------------------------------------
+
+✅ TECH STACK
+-------------
+Frontend : HTML, CSS, Vanilla JavaScript
+Backend  : Node.js, Express
+Database : PostgreSQL
+Extras   : bcrypt, dotenv, SweetAlert2, nodemon
+
+=============
+
+🗂 FOLDER STRUCTURE
+-------------------
+- frontend/        → UI files
+- backend/         → API server
+- controllers/     → Logic for routes
+- routes/          → Express routing per module
+- db.js            → PostgreSQL config
+- create_students_table.sql → Table schema
+
+=============
+
+⚙️  FILE WISE FUNCTIONALITY
+----------------------------
+
+[1] backend/server.js
+    - App entry point
+    - Loads environment, middlewares, routes
+    - Starts on PORT 5000
+
+[2] backend/db.js
+    - Connects PostgreSQL using pg module
+    - Uses connection parameters from .env
+
+[3] backend/routes/auth.js
+    - POST /api/register
+    - POST /api/login
+    - Routes are connected to authController.js
+
+[4] backend/controllers/authController.js
+    - registerStudent(): Registers user with bcrypt password, stores to DB
+    - loginStudent(): Verifies password, returns login success/fail
+
+[5] backend/routes/students.js
+    - GET /api/students → Returns all students
+
+[6] backend/controllers/studentController.js
+    - getAllStudents(): Fetches all student data
+
+[7] frontend/register.html
+    - Registration form (name, email, password, branch, year)
+    - Validates and sends data to /api/register
+    - Shows success/error using SweetAlert
+    - Redirects to login.html
+
+[8] frontend/login.html
+    - Login form (email, password)
+    - "Show password" toggle
+    - "Remember me" to store data locally
+    - On success → redirect to dashboard.html
+
+[9] frontend/dashboard.html
+    - Fetches all students from backend
+    - Displays them in stylish card layout (using CSS)
+
+[10] frontend/style.css
+    - Dark theme, neon glow, animated buttons
+    - Responsive layout, styled checkboxes
+    - Custom visuals for forms/cards/buttons
+
+[11] sweetalert2.all.min.js
+    - Prebuilt library for alert modals
+    - Used in register/login/dashboard pages for alerts
+
+[12] db/create_students_table.sql
+    - Creates "students" table with fields:
+        id        SERIAL PRIMARY KEY
+        name      TEXT
+        email     TEXT (unique)
+        password  TEXT (hashed)
+        branch    TEXT
+        year      INT
+
+=============
+
+🔧 DATABASE SETUP
+------------------
+1. Install PostgreSQL.
+2. Create database, e.g. "studentdb".
+3. Run the SQL script:
+psql -U postgres -d studentdb -f db/create_students_table.sql
+
+=============
+
+🖥 BACKEND RUN
+---------------
+cd backend/
+npm install
+cp .env.example .env
+# Fill DB creds
+npm run dev     → Uses nodemon
+
+=============
+
+🌐 FRONTEND RUN
+---------------
+cd frontend/
+Use Live Server (VSCode)
+Run register.html or login.html
+
+=============
+
+🎯 SPECIAL FEATURES
+--------------------
+- Password is hashed using bcrypt10
+- SweetAlert2 for alert messages
+- Dark neon theme and hover effects
+- "Show password" reusable component
+- Quick Fill (hover to auto-fill test credentials)
+- LocalStorage based "Remember Me"
+
+=============
+
+📢 DEBUG TIPS
+--------------
+- Use browser console for JS errors
+- Use Postman to test /api endpoints
+- DB errors shown in terminal (backend logs)
+- Make sure .env is correctly filled
+
+=============
+
+👋 AUTHOR NOTE
+---------------
+This project is fully modular, easy to scale, and built for dark-themed dashboard lovers.
+Can be extended to add:
+- Edit/Delete students
+- JWT-based auth
+- Search/filter
