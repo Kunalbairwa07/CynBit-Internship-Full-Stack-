@@ -1,4 +1,4 @@
 exclude:
   - Day 11/backend/
-  - Day 12/backend/
+  - Day 12/student-management-system/backend/
   - node_modules/
