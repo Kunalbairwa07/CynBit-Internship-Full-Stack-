@@ -1,0 +1,5 @@
+exclude:
+  - node_modules
+  - README.md
+  - Day 11/
+  - Day 12/
