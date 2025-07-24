@@ -1,5 +1,4 @@
 exclude:
-  - node_modules
-  - README.md
-  - Day 11/
-  - Day 12/
+  - Day 11/backend/
+  - Day 12/backend/
+  - node_modules/
